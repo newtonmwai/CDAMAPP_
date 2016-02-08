@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="cdam">
+        <menu>
+            <item android:title="app"
+                android:id="@+id/nav_item_app"
+                android:icon="@drawable/favicon"/>
+        </menu>
+    </item>
+    <item android:title="Contact">
+        <menu>
+            <item android:title="Contact Us"
+                android:id="@+id/nav_item_contact"
+                android:icon="@drawable/inbox"/>
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item android:title="Settings"
+                android:id="@+id/nav_item_settings"
+                android:icon="@drawable/settings"/>
+        </menu>
+    </item>
+
+</menu>

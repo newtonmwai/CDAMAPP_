@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtvw1"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="Coffee Dryness Acoustic Monitor"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="30dip" />
+
+    <TextView
+        android:id="@+id/txtvw5"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtvw1"
+        android:layout_weight="1.0"
+        android:text="This is a moisture meter based on the coffee dryness acoustic monitor (cdam) classifier"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/txtvw6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtvw5"
+        android:layout_weight="1.0"
+        android:text="It maps a recording into one of the classes { wet, mid, dry }"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="20dip" />
+
+    <com.cardiomood.android.controls.gauge.SpeedometerGauge
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txtvw6"
+        android:padding="8dp"
+        android:id="@+id/speedometer" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_below="@+id/speedometer"
+        android:text="Inferred Dryness Level: "
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:textSize="20dip" />
+
+
+
+    <TextView
+        android:id="@+id/txtvw2"
+        android:layout_below="@+id/resultTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text=""
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/btnControl"
+            android:layout_below="@+id/txtvw2"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_weight="1.0"
+            android:textSize="30dip"
+            android:text=""
+            android:background="#7f8c8d"
+            android:textColor="@layout/buttondesign"/>
+
+    <TextView
+        android:id="@+id/Textdisplay"
+        android:layout_below="@+id/btnControl"
+        android:layout_width="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:padding="8dp"
+        android:text=""
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/txtspace3"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/Textdisplay"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:padding="8dp"
+        android:text="  "
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/txtspace1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/txtspace3"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:padding="8dp"
+        android:text="  "
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_below="@+id/txtspace1"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="false"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text=""
+        android:textSize="20dip"
+        android:background="#7f8c8d"
+        android:textColor="@layout/buttondesign"/>
+
+</RelativeLayout>
